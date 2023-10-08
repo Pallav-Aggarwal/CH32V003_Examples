@@ -1,0 +1,46 @@
+.text
+	|	0x000000a0	|	__riscv_save_1        	|	FUNC  	|	0xa
+	|	0x000000aa	|	__riscv_restore_2     	|	FUNC  	|	0xa
+	|	0x000000b4	|	__mulsi3              	|	FUNC  	|	0x14
+	|	0x000000cc	|	__divsi3              	|	FUNC  	|	0x58
+	|	0x000000d4	|	__udivsi3             	|	FUNC  	|	0x2c
+	|	0x00000100	|	__umodsi3             	|	FUNC  	|	0x8
+	|	0x00000124	|	__modsi3              	|	FUNC  	|	0x24
+	|	0x0000014a	|	NMI_Handler           	|	FUNC  	|	0x4
+	|	0x0000014e	|	HardFault_Handler     	|	FUNC  	|	0x2
+	|	0x00000150	|	IIC_Init              	|	FUNC  	|	0x8e
+	|	0x000001de	|	SHTC3Wakeup           	|	FUNC  	|	0xb0
+	|	0x0000028e	|	SHTC3MeasureCMDHF     	|	FUNC  	|	0xb0
+	|	0x0000033e	|	I2CRead               	|	FUNC  	|	0x9c
+	|	0x000003da	|	main                  	|	FUNC  	|	0x78
+	|	0x00000452	|	SystemInit            	|	FUNC  	|	0x12a
+	|	0x0000057c	|	SystemCoreClockUpdate 	|	FUNC  	|	0x68
+	|	0x0000069e	|	GPIO_Init             	|	FUNC  	|	0xd6
+	|	0x00000774	|	I2C_Init              	|	FUNC  	|	0xe2
+	|	0x00000856	|	I2C_Cmd               	|	FUNC  	|	0x18
+	|	0x0000086e	|	I2C_GenerateSTART     	|	FUNC  	|	0x1a
+	|	0x00000888	|	I2C_GenerateSTOP      	|	FUNC  	|	0x1a
+	|	0x000008a2	|	I2C_AcknowledgeConfig 	|	FUNC  	|	0x1a
+	|	0x000008bc	|	I2C_SendData          	|	FUNC  	|	0x4
+	|	0x000008c0	|	I2C_ReceiveData       	|	FUNC  	|	0x8
+	|	0x000008c8	|	I2C_Send7bitAddress   	|	FUNC  	|	0x12
+	|	0x000008da	|	I2C_CheckEvent        	|	FUNC  	|	0x16
+	|	0x000008f0	|	I2C_GetFlagStatus     	|	FUNC  	|	0x32
+	|	0x00000922	|	RCC_GetClocksFreq     	|	FUNC  	|	0x9c
+	|	0x000009be	|	RCC_APB2PeriphClockCmd	|	FUNC  	|	0x1e
+	|	0x000009dc	|	RCC_APB1PeriphClockCmd	|	FUNC  	|	0x1e
+	|	0x000009fa	|	Delay_Init            	|	FUNC  	|	0x34
+	|	0x00000a2e	|	Delay_Ms              	|	FUNC  	|	0x3a
+
+.data
+	|	0x20000000	|	AHBPrescTable         	|	OBJECT	|	0x10
+	|	0x20000010	|	SystemCoreClock       	|	OBJECT	|	0x4
+	|	0x20000014	|	ADCPrescTable         	|	OBJECT	|	0x14
+	|	0x20000028	|	APBAHBPrescTable      	|	OBJECT	|	0x10
+
+.bss
+	|	0x20000038	|	H1                    	|	OBJECT	|	0x4
+	|	0x2000003c	|	T1                    	|	OBJECT	|	0x4
+	|	0x20000040	|	p_ms                  	|	OBJECT	|	0x2
+	|	0x20000042	|	p_us                  	|	OBJECT	|	0x1
+
